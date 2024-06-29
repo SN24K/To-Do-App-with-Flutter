@@ -1,0 +1,24 @@
+class ToDo {
+  String? id;
+  String? todoText;
+  bool isDone;
+  ToDo({
+    required this.id,
+    required this.todoText,
+    this.isDone = false,
+  });
+
+  static List<ToDo> todoList() {
+    return [
+      ToDo(id: '01', todoText: 'Leetcode daily challege', isDone: true),
+      ToDo(id: '02', todoText: 'Data Analytics Project', isDone: true),
+      ToDo(
+        id: '03',
+        todoText: 'Check Emails',
+      ),
+      ToDo(id: '04', todoText: 'Check linkedin for Job Application'),
+      ToDo(id: '05', todoText: 'Work on mobile apps for 2 hour'),
+      ToDo(id: '06', todoText: 'Exercise'),
+    ];
+  }
+}
